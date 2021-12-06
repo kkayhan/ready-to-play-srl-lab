@@ -1,0 +1,16 @@
+all:
+  children:
+    srl:
+      hosts:
+        clab-play_srl-client:
+          ansible_host: 172.20.20.4
+        clab-play_srl-leaf1:
+          ansible_host: 172.20.20.2
+        clab-play_srl-leaf2:
+          ansible_host: 172.20.20.3
+        clab-play_srl-spine1:
+          ansible_host: 172.20.20.5
+    vr-sros:
+      hosts:
+        clab-play_srl-dcgw1:
+          ansible_host: 172.20.20.6
